@@ -3,11 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Feu clic dret per a editar l'adreça o l'etiqueta</translation>
+        <translation>Feu clic al botó dret per a editar l'adreça o l'etiqueta</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Crea una nova adreça</translation>
+        <translation>Crea una adreça nova</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -23,11 +23,15 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Tanca</translation>
+        <translation>T&amp;anca</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Elimina l'adreça sel·leccionada actualment de la llista</translation>
+        <translation>Elimina l'adreça seleccionada actualment de la llista</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Introduïu una adreça o una etiqueta per cercar</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -39,7 +43,80 @@
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Elimina</translation>
+        <translation>&amp;Esborra</translation>
+    </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Trieu l'adreça on enviar les monedes</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Trieu l'adreça on rebre les monedes</translation>
+    </message>
+    <message>
+        <source>C&amp;hoose</source>
+        <translation>&amp;Tria</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Adreces d'enviament</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Adreces de recepció</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les vostres adreces de Bitcoin per enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Aquestes son les teves adreces de Bitcoin per rebre pagaments. Utilitza el botó "Crear nova adreça de recepció" de la pestanya de recepció per crear una nova adreça.
+Només és possible firmar amb adreces del tipus "legacy".</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Copia l'adreça</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>Copia l'&amp;etiqueta</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;Edita</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Exporta la llista d'adreces</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Fitxer separat per comes (*.csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>L'exportació ha fallat</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>S'ha produït un error en desar la llista d'adreces a %1. Torneu-ho a provar.</translation>
+    </message>
+</context>
+<context>
+    <name>AddressTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adreça</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
     </message>
 </context>
 <context>
@@ -54,11 +131,115 @@
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Nova contrasenya</translation>
+        <translation>Contrasenya nova</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Repetiu la nova contrasenya</translation>
+        <translation>Repetiu la contrasenya nova</translation>
+    </message>
+    <message>
+        <source>Show passphrase</source>
+        <translation>Mostra la contrasenya</translation>
+    </message>
+    <message>
+        <source>Encrypt wallet</source>
+        <translation>Xifra la cartera</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <translation>Aquesta operació requereix la contrasenya de la cartera per a desblocar-la.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Desbloca la cartera</translation>
+    </message>
+    <message>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>Aquesta operació requereix la contrasenya de la cartera per a desxifrar-la.</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Desxifra la cartera</translation>
+    </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation>Canvia la contrasenya</translation>
+    </message>
+    <message>
+        <source>Confirm wallet encryption</source>
+        <translation>Confirma el xifratge de la cartera</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS BITCOINS&lt;/b&gt;!</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to encrypt your wallet?</source>
+        <translation>Esteu segurs que voleu xifrar la vostra cartera?</translation>
+    </message>
+    <message>
+        <source>Wallet encrypted</source>
+        <translation>Cartera xifrada</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Introduïu la contrasenya nova a la cartera.&lt;br/&gt;Utilitzeu una contrasenya de &lt;b&gt;deu o més caràcters aleatoris&lt;/b&gt;, o &lt;b&gt;vuit o més paraules&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation>Introduïu la contrasenya antiga i la contrasenya nova a la cartera.</translation>
+    </message>
+    <message>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Recorda que tot i xifrant la teva cartera, els teus bitcoins no estan completament protegits de robatori a través de programari maliciós que estigui infectant el teu ordinador.</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation>Cartera per ser encriptada</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation>La teva cartera està apunt de ser xifrada</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation>S'ha xifrat la cartera.</translation>
+    </message>
+    <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>IMPORTANT: Tota copia de seguretat del fitxer de la cartera que hàgiu realitzat hauria de ser reemplaçada pel fitxer xifrat de la cartera generat recentment. Per motius de seguretat, les còpies de seguretat anteriors del fitxer de la cartera no xifrada esdevindran inusables tan aviat com comenceu a utilitzar la cartera xifrada nova.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed</source>
+        <translation>Ha fallat el xifratge de la cartera</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>El xifrat del moneder ha fallat per un error intern. El moneder no ha estat xifrat.</translation>
+    </message>
+    <message>
+        <source>The supplied passphrases do not match.</source>
+        <translation>Les contrasenyes introduïdes no coincideixen.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock failed</source>
+        <translation>El desbloqueig de la cartera ha fallat</translation>
+    </message>
+    <message>
+        <source>The passphrase entered for the wallet decryption was incorrect.</source>
+        <translation>La contrasenya introduïda per a desxifrar el moneder és incorrecta.</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>El desxifrat del moneder ha fallat</translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>La contrasenya del moneder ha estat canviada correctament.</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Avís: Les lletres majúscules estan activades!</translation>
     </message>
 </context>
 <context>
@@ -84,15 +265,11 @@
     </message>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;Panorama general</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Node</translation>
+        <translation>&amp;Visió general</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Mostra el panorama general del moneder</translation>
+        <translation>Mostra una visió general del moneder</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -100,7 +277,7 @@
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Cerca a l'historial de transaccions</translation>
+        <translation>Explora l'historial de transaccions</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -109,6 +286,14 @@
     <message>
         <source>Quit application</source>
         <translation>Surt de l'aplicació</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>Qu&amp;ant al %1</translation>
+    </message>
+    <message>
+        <source>Show information about %1</source>
+        <translation>Mostra informació sobre el %1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -123,8 +308,12 @@
         <translation>&amp;Opcions...</translation>
     </message>
     <message>
+        <source>Modify configuration options for %1</source>
+        <translation>Modifica les opcions de configuració de %1</translation>
+    </message>
+    <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encripta el moneder...</translation>
+        <translation>&amp;Encripta la cartera...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
@@ -135,20 +324,44 @@
         <translation>&amp;Canvia la contrasenya...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Adreces d'e&amp;nviament...</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Adreces de &amp;recepció</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>Obre un &amp;URI...</translation>
     </message>
     <message>
+        <source>Create Wallet...</source>
+        <translation>Crear Cartera...</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Crear una nova cartera</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Moneder:</translation>
+    </message>
+    <message>
+        <source>Click to disable network activity.</source>
+        <translation>Feu clic per inhabilitar l'activitat de la xarxa.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>S'ha inhabilitat l'activitat de la xarxa.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Feu clic per tornar a habilitar l'activitat de la xarxa.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>Sincronitzant capçaleres (%1%)...</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>S'estan reindexant els blocs al disc...</translation>
+    </message>
+    <message>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>El servidor proxy està &lt;b&gt;activat&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
@@ -156,31 +369,15 @@
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Realitza una còpia de seguretat del moneder a una altra ubicació</translation>
+        <translation>Realitza una còpia de seguretat de la cartera a una altra ubicació</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Canvia la contrasenya d'encriptació del moneder</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Finestra de depuració</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Obre la consola de diagnòstic i depuració</translation>
+        <translation>Canvia la contrasenya d'encriptació de la cartera</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifica el missatge...</translation>
-    </message>
-    <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Moneder</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -200,7 +397,7 @@
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encripta les claus privades pertanyents al moneder</translation>
+        <translation>Encripta les claus privades pertanyents de la cartera</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
@@ -239,44 +436,24 @@
         <translation>Mostra la llista d'adreces de recepció i etiquetes utilitzades</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Obre una bitcoin: sol·licitud d'URI o pagament</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>Opcions de la &amp;línia d'ordres</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Bitcoin</numerusform><numerusform>%n connexions actives a la xarxa Bitcoin</numerusform></translation>
+        <translation><numerusform>Una connexió activa a la xarxa de Bitcoin</numerusform><numerusform>%n connexions actives a la xarxa de Bitcoin</numerusform></translation>
     </message>
     <message>
-        <source>No block source available...</source>
-        <translation>No hi ha cap font de bloc disponible...</translation>
+        <source>Indexing blocks on disk...</source>
+        <translation>S'estan indexant els blocs al disc...</translation>
+    </message>
+    <message>
+        <source>Processing blocks on disk...</source>
+        <translation>S'estan processant els blocs al disc...</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>S'han processat %n bloc de l'historial de transacció.</numerusform><numerusform>S'han processat %n blocs de l'historial de transacció.</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n any</numerusform><numerusform>%n anys</numerusform></translation>
+        <translation><numerusform>Processat un bloc de l'historial de transaccions.</numerusform><numerusform>Processat %n blocs de l'historial de transaccions.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -304,11 +481,123 @@
     </message>
     <message>
         <source>Up to date</source>
-        <translation>Al dia</translation>
+        <translation>Actualitzat</translation>
+    </message>
+    <message>
+        <source>&amp;Load PSBT from file...</source>
+        <translation>&amp;Carrega el PSBT des del fitxer ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>Carrega la transacció Bitcoin signada parcialment</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>Carrega PSBT des del porta-retalls ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>Carrega la transacció de Bitcoin signada parcialment des del porta-retalls</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Finestra node</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Obrir depurador de node i consola de diagnosi.</translation>
+    </message>
+    <message>
+        <source>&amp;Sending addresses</source>
+        <translation>Adreces d'&amp;enviament</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses</source>
+        <translation>Adreces de &amp;recepció</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Obrir un bitcoin: URI</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <translation>Obre la cartera</translation>
+    </message>
+    <message>
+        <source>Open a wallet</source>
+        <translation>Obre una cartera</translation>
+    </message>
+    <message>
+        <source>Close Wallet...</source>
+        <translation>Tanca la cartera...</translation>
+    </message>
+    <message>
+        <source>Close wallet</source>
+        <translation>Tanca la cartera</translation>
+    </message>
+    <message>
+        <source>Close All Wallets...</source>
+        <translation>Tanca totes les carteres ...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Tanqueu totes les carteres</translation>
+    </message>
+    <message>
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Bitcoin</translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp;Emmascara els valors</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>Emmascara els valors en la pestanya Visió general</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>cartera predeterminada</translation>
+    </message>
+    <message>
+        <source>No wallets available</source>
+        <translation>No hi ha cap cartera disponible</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Finestra</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimitza</translation>
+    </message>
+    <message>
+        <source>Zoom</source>
+        <translation>Escala</translation>
+    </message>
+    <message>
+        <source>Main Window</source>
+        <translation>Finestra principal</translation>
+    </message>
+    <message>
+        <source>%1 client</source>
+        <translation>Client de %1</translation>
+    </message>
+    <message>
+        <source>Connecting to peers...</source>
+        <translation>Connectant als iguals...</translation>
     </message>
     <message>
         <source>Catching up...</source>
         <translation>S'està posant al dia ...</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation>Avís: %1</translation>
+    </message>
+    <message>
+        <source>Warning: %1</source>
+        <translation>Avís: %1</translation>
     </message>
     <message>
         <source>Date: %1
@@ -320,6 +609,12 @@
         <source>Amount: %1
 </source>
         <translation>Import: %1
+</translation>
+    </message>
+    <message>
+        <source>Wallet: %1
+</source>
+        <translation>Cartera: %1
 </translation>
     </message>
     <message>
@@ -349,12 +644,32 @@
         <translation>Transacció entrant</translation>
     </message>
     <message>
+        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
+        <translation>La generació de la clau HD és &lt;b&gt;habilitada&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>La generació de la clau HD és &lt;b&gt;inhabilitada&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
+        <translation>Clau privada &lt;b&gt;inhabilitada&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i actualment &lt;b&gt;desbloquejat&lt;/b&gt;</translation>
+        <translation>La cartera està &lt;b&gt;encriptada&lt;/b&gt; i actualment &lt;b&gt;desblocada&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i actualment &lt;b&gt;bloquejat&lt;/b&gt;</translation>
+        <translation>La cartera està &lt;b&gt;encriptada&lt;/b&gt; i actualment &lt;b&gt;blocada&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Original message:</source>
+        <translation>Missatge original:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>S'ha produït un error fatal. %1 ja no pot continuar amb seguretat i sortirà.</translation>
     </message>
 </context>
 <context>
@@ -376,12 +691,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Prioritat:</translation>
-    </message>
-    <message>
         <source>Fee:</source>
-        <translation>Comissió</translation>
+        <translation>Comissió:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -432,8 +743,147 @@
         <translation>Confirmat</translation>
     </message>
     <message>
-        <source>Priority</source>
-        <translation>Prioritat</translation>
+        <source>Copy address</source>
+        <translation>Copia l'adreça</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copia l'etiqueta</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Copia l'ID de transacció</translation>
+    </message>
+    <message>
+        <source>Lock unspent</source>
+        <translation>Bloqueja sense gastar</translation>
+    </message>
+    <message>
+        <source>Unlock unspent</source>
+        <translation>Desbloqueja sense gastar</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copia la quantitat</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copia la comissió</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Copia la comissió posterior</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copia els bytes</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Copia el polsim</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copia el canvi</translation>
+    </message>
+    <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 bloquejada)</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>sí</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>no</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
+        <translation>Aquesta etiqueta es torna vermella si cap recipient rep un import inferior al llindar de polsim actual.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Pot variar en +/- %1 satoshi(s) per entrada.</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
+    </message>
+    <message>
+        <source>change from %1 (%2)</source>
+        <translation>canvia de %1 (%2)</translation>
+    </message>
+    <message>
+        <source>(change)</source>
+        <translation>(canvia)</translation>
+    </message>
+</context>
+<context>
+    <name>CreateWalletActivity</name>
+    <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>Creant cartera &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
+        <source>Create wallet failed</source>
+        <translation>La creació de cartera ha fallat</translation>
+    </message>
+    <message>
+        <source>Create wallet warning</source>
+        <translation>Avís en la creació de la cartera</translation>
+    </message>
+</context>
+<context>
+    <name>CreateWalletDialog</name>
+    <message>
+        <source>Create Wallet</source>
+        <translation>Crear cartera</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <translation>Nom de la cartera</translation>
+    </message>
+    <message>
+        <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
+        <translation>Xifra la cartera. La cartera serà xifrada amb la contrasenya que escullis.</translation>
+    </message>
+    <message>
+        <source>Encrypt Wallet</source>
+        <translation>Xifrar la cartera</translation>
+    </message>
+    <message>
+        <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
+        <translation>Deshabilita les claus privades per a aquesta cartera. Carteres amb claus privades deshabilitades no tindran cap clau privada i no podran tenir cap llavor HD o importar claus privades.
+Això és ideal per a carteres de mode només lectura.</translation>
+    </message>
+    <message>
+        <source>Disable Private Keys</source>
+        <translation>Deshabilitar claus privades</translation>
+    </message>
+    <message>
+        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
+        <translation>Crea una cartera en blanc. Carteres en blanc no tenen claus privades inicialment o scripts. Claus privades i adreces poden ser importades, o una llavor HD, més endavant.</translation>
+    </message>
+    <message>
+        <source>Make Blank Wallet</source>
+        <translation>Fes cartera en blanc</translation>
+    </message>
+    <message>
+        <source>Use descriptors for scriptPubKey management</source>
+        <translation>Utilitzeu descriptors per a la gestió de scriptPubKey</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>Cartera del descriptor</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation>Crear</translation>
     </message>
 </context>
 <context>
@@ -457,6 +907,38 @@
     <message>
         <source>&amp;Address</source>
         <translation>&amp;Adreça</translation>
+    </message>
+    <message>
+        <source>New sending address</source>
+        <translation>Nova adreça d'enviament</translation>
+    </message>
+    <message>
+        <source>Edit receiving address</source>
+        <translation>Edita l'adreça de recepció</translation>
+    </message>
+    <message>
+        <source>Edit sending address</source>
+        <translation>Edita l'adreça d'enviament</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>L'adreça introduïda «%1» no és una adreça de Bitcoin vàlida.</translation>
+    </message>
+    <message>
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation>L'adreça "%1" ja existeix com una adreça per rebre amb l'etiqueta "%2" i per tant no pot ésser afegida com adreça per enviar.</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>L'adreça introduïda "%1" ja existeix al directori d'adreces amb l'etiqueta "%2".</translation>
+    </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>No s'ha pogut desblocar la cartera.</translation>
+    </message>
+    <message>
+        <source>New key generation failed.</source>
+        <translation>Ha fallat la generació d'una clau nova.</translation>
     </message>
 </context>
 <context>
@@ -489,51 +971,43 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
+        <source>About %1</source>
+        <translation>Quant al %1</translation>
     </message>
     <message>
         <source>Command-line options</source>
         <translation>Opcions de línia d'ordres</translation>
     </message>
-    <message>
-        <source>Usage:</source>
-        <translation>Ús:</translation>
-    </message>
-    <message>
-        <source>command-line options</source>
-        <translation>Opcions de la línia d'ordres</translation>
-    </message>
-    <message>
-        <source>UI Options:</source>
-        <translation>Opcions d'interfície d'usuari:</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: %u)</source>
-        <translation>Trieu el directori de dades a l'inici (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Defineix la llengua, per exemple «de_DE» (per defecte: la definida pel sistema)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Inicia minimitzat</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Defineix els certificats arrel SSL per a la sol·licitud de pagament (per defecte: els del sistema)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: %u)</source>
-        <translation>Mostra la pantalla de benvinguda a l'inici (per defecte: %u)</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>Intro</name>
     <message>
         <source>Welcome</source>
-        <translation>Us donem la benviguda</translation>
+        <translation>Us donem la benvinguda</translation>
+    </message>
+    <message>
+        <source>Welcome to %1.</source>
+        <translation>Us donem la benvinguda a %1.</translation>
+    </message>
+    <message>
+        <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
+        <translation>Com és la primera vegada que s'executa el programa, podeu triar on %1 emmagatzemaran les dades.</translation>
+    </message>
+    <message>
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>Quan feu clic a D'acord, %1 començarà a descarregar i processar la cadena de blocs %4 completa (%2 GB) començant per les primeres transaccions de %3, any de llençament inicial de %4.</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
+        <translation>Desfer aquest canvi requereix tornar-se a descarregar el blockchain sencer. És més ràpid descarregar la cadena completa primer i després podar. Deshabilita algunes de les característiques avançades.</translation>
+    </message>
+    <message>
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>Aquesta sincronització inicial és molt exigent i pot exposar problemes de maquinari amb l'equip que anteriorment havien passat desapercebuts. Cada vegada que executeu %1, continuarà descarregant des del punt on es va deixar.</translation>
+    </message>
+    <message>
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>Si heu decidit limitar l'emmagatzematge de la cadena de blocs (podar), les dades històriques encara s'hauran de baixar i processar, però se suprimiran més endavant per mantenir baix l'ús del disc.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -542,6 +1016,30 @@
     <message>
         <source>Use a custom data directory:</source>
         <translation>Utilitza un directori de dades personalitzat:</translation>
+    </message>
+    <message>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
+    <message>
+        <source>Discard blocks after verification, except most recent %1 GB (prune)</source>
+        <translation>Descarta blocs després de la verificació, excepte el més recent %1 GB (podar)</translation>
+    </message>
+    <message>
+        <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
+        <translation>Almenys %1 GB de dades s'emmagatzemaran en aquest directori, i creixerà amb el temps.</translation>
+    </message>
+    <message>
+        <source>Approximately %1 GB of data will be stored in this directory.</source>
+        <translation>Aproximadament %1GB de dades seran emmagetzamades en aquest directori.</translation>
+    </message>
+    <message>
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation>%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs Bitcoin.</translation>
+    </message>
+    <message>
+        <source>The wallet will also be stored in this directory.</source>
+        <translation>La cartera també serà emmagatzemat en aquest directori.</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -553,30 +1051,104 @@
     </message>
     <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB d'espai lliure disponible</numerusform><numerusform>%n GB d'espai lliure disponible</numerusform></translation>
+        <translation><numerusform>Un GB d'espai lliure disponible.</numerusform><numerusform>%n GB d'espai lliure disponibles</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation><numerusform>(de %n GB necessari)</numerusform><numerusform>(de %n GB necessaris)</numerusform></translation>
+        <translation><numerusform>(Un GB necessari)</numerusform><numerusform>(de %n GB necessàris)</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation><numerusform>(Un GB necessari per a la cadena completa)</numerusform><numerusform>(Un GB necessari per a la cadena completa)</numerusform></translation>
+    </message>
+</context>
+<context>
+    <name>ModalOverlay</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulari</translation>
+    </message>
+    <message>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <translation>És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa bitcoin, tal com es detalla més avall.</translation>
+    </message>
+    <message>
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Els intents de gastar bitcoins que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
+    </message>
+    <message>
+        <source>Number of blocks left</source>
+        <translation>Nombre de blocs pendents</translation>
+    </message>
+    <message>
+        <source>Unknown...</source>
+        <translation>Desconegut...</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation>Últim temps de bloc</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Progrés</translation>
+    </message>
+    <message>
+        <source>Progress increase per hour</source>
+        <translation>Augment de progrés per hora</translation>
+    </message>
+    <message>
+        <source>calculating...</source>
+        <translation>s'està calculant...</translation>
+    </message>
+    <message>
+        <source>Estimated time left until synced</source>
+        <translation>Temps estimat restant fins sincronitzat</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Amaga</translation>
+    </message>
+    <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>%1 sincronitzant ara mateix. Es descarregaran capçaleres i blocs d'altres peers i es validaran fins a obtenir la punta de la cadena de blocs. </translation>
+    </message>
+    <message>
+        <source>Unknown. Syncing Headers (%1, %2%)...</source>
+        <translation>Desconegut. Sincronització de les capçaleres (%1, %2%)...</translation>
     </message>
 </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Obre un URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Obre una sol·licitud de pagament des d'un URI o un fitxer</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Obre Bitcoin URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
+</context>
+<context>
+    <name>OpenWalletActivity</name>
     <message>
-        <source>Select payment request file</source>
-        <translation>Selecciona un fitxer de sol·licitud de pagament</translation>
+        <source>Open wallet failed</source>
+        <translation>Ha fallat l'obertura de la cartera</translation>
+    </message>
+    <message>
+        <source>Open wallet warning</source>
+        <translation>Avís en l'obertura de la cartera</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>moneder per defecte</translation>
+    </message>
+    <message>
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>S'està obrint la cartera &lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
 </context>
 <context>
@@ -590,44 +1162,52 @@
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Size of &amp;database cache</source>
-        <translation>Mida de la memòria cau de la base de &amp;dades</translation>
+        <source>Automatically start %1 after logging in to the system.</source>
+        <translation>Inicieu %1 automàticament després d'entrar en el sistema.</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>MB</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Inicia %1 en l'entrada al sistema</translation>
+    </message>
+    <message>
+        <source>Size of &amp;database cache</source>
+        <translation>Mida de la memòria cau de la base de &amp;dades</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Nombre de fils de &amp;verificació d'scripts</translation>
     </message>
     <message>
-        <source>Accept connections from outside</source>
-        <translation>Accepta connexions de fora</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Permet connexions entrants</translation>
-    </message>
-    <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Adreça IP del proxy (p. ex. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
+        <translation>Mostra si el proxy SOCKS5 predeterminat subministrat s'utilitza per arribar a altres nodes a través d'aquest tipus de xarxa.</translation>
+    </message>
+    <message>
+        <source>Hide the icon from the system tray.</source>
+        <translation>Amaga la icona de la safata del sistema</translation>
+    </message>
+    <message>
+        <source>&amp;Hide tray icon</source>
+        <translation>Amaga la icona de la safata</translation>
+    </message>
+    <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation>Minimitza en comptes de sortir de l'aplicació quan la finestra es tanca. Quan s'habilita aquesta opció l'aplicació es tancara només quan se selecciona Surt del menú. </translation>
+        <translation>Minimitza en comptes de sortir de l'aplicació quan la finestra es tanca. Quan s'habilita aquesta opció l'aplicació es tancarà només quan se selecciona Surt del menú. </translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL de terceres parts (p. ex. explorador de blocs) que apareix en la pestanya de transaccions com elements del menú contextual. %s en l'URL es reemplaçat pel resum de la transacció. Diferents URL estan separades per una barra vertical |.</translation>
     </message>
     <message>
-        <source>Third party transaction URLs</source>
-        <translation>URL de transaccions de terceres parts</translation>
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>Obriu el fitxer de configuració %1 des del directori de treball.</translation>
     </message>
     <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Opcions de línies d'ordre active que sobreescriuen les opcions de dalt:</translation>
+        <source>Open Configuration File</source>
+        <translation>Obre el fitxer de configuració</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -640,6 +1220,26 @@
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Xarxa</translation>
+    </message>
+    <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>Deshabilita unes característiques avançades però tots els blocs encara seran validats completament. Revertir aquesta configuració requereix tornar a descarregar la cadena de blocs sencera un altre cop. L'espai en ús del disc és possible que augmenti.</translation>
+    </message>
+    <message>
+        <source>Prune &amp;block storage to</source>
+        <translation>Prunar emmagatzemament de &amp;block a</translation>
+    </message>
+    <message>
+        <source>GB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <source>Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation>Revertir aquesta configuració requereix tornar a descarregar la cadena de blocs sencera un altre cop.</translation>
+    </message>
+    <message>
+        <source>MiB</source>
+        <translation>MiB</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -674,6 +1274,14 @@
         <translation>Port obert amb &amp;UPnP</translation>
     </message>
     <message>
+        <source>Accept connections from outside.</source>
+        <translation>Accepta connexions de fora</translation>
+    </message>
+    <message>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Permet connexions entrants</translation>
+    </message>
+    <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
         <translation>Connecta a la xarxa Bitcoin a través d'un proxy SOCKS5.</translation>
     </message>
@@ -698,10 +1306,6 @@
         <translation>Utilitzat per arribar als iguals mitjançant:</translation>
     </message>
     <message>
-        <source>Shows, if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Mostra si el proxy SOCKS5 per defecte proporcionat s'utilitza per arribar als iguals mitjançant aquest tipus de xarxa.</translation>
-    </message>
-    <message>
         <source>IPv4</source>
         <translation>IPv4</translation>
     </message>
@@ -712,14 +1316,6 @@
     <message>
         <source>Tor</source>
         <translation>Tor</translation>
-    </message>
-    <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectar a la red de Bitcoin a través de un proxy SOCKS5 per als serveis ocults de Tor</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Utilitza un proxy SOCKS4 apart per a arribar als iguals a través de serveis ocults de Tor:</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -746,6 +1342,10 @@
         <translation>&amp;Llengua de la interfície d'usuari:</translation>
     </message>
     <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
+        <translation>Aquí es pot definir la llengua de la interfície d'usuari. Aquest paràmetre tindrà efecte en reiniciar el %1.</translation>
+    </message>
+    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Unitats per mostrar els imports en:</translation>
     </message>
@@ -756,6 +1356,22 @@
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Si voleu mostrar les funcions de control de monedes o no.</translation>
+    </message>
+    <message>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Connecteu-vos a la xarxa Bitcoin mitjançant un servidor intermediari SOCKS5 separat per als serveis de ceba Tor.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Utilitzeu el servidor intermediari SOCKS&amp;5 per arribar als peers mitjançant els serveis d'onion de Tor:</translation>
+    </message>
+    <message>
+        <source>&amp;Third party transaction URLs</source>
+        <translation>URL de transaccions de tercers</translation>
+    </message>
+    <message>
+        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
+        <translation>Opcions configurades en aquest diàleg són sobreescrites per la línia de comandes o el fitxer de configuració:</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -786,6 +1402,22 @@
         <translation>S'aturarà el client. Voleu procedir?</translation>
     </message>
     <message>
+        <source>Configuration options</source>
+        <translation>Opcions de configuració</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation>El fitxer de configuració s'utilitza per especificar les opcions d'usuari avançades que substitueixen la configuració de la interfície gràfica d'usuari. A més, qualsevol opció de la línia d'ordres substituirà aquest fitxer de configuració.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation>No s'ha pogut obrir el fitxer de configuració.</translation>
+    </message>
+    <message>
         <source>This change would require a client restart.</source>
         <translation>Amb aquest canvi cal un reinici del client.</translation>
     </message>
@@ -802,7 +1434,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Bitcoin un cop s'ha establert connexió, però aquest proces no s'ha completat encara.</translation>
+        <translation>La informació mostrada pot no estar al dia. El vostra cartera se sincronitza automàticament amb la xarxa Bitcoin un cop s'ha establert connexió, però aquest proces encara no ha finalitzat.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -868,6 +1500,84 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>Balanç total actual en adreces de només lectura</translation>
     </message>
+    <message>
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>El mode de privadesa està activat a la pestanya d'Overview. Per desenmascarar els valors, desmarqueu Configuració-&gt; Valors de màscara.</translation>
+    </message>
+</context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diàleg</translation>
+    </message>
+    <message>
+        <source>Sign Tx</source>
+        <translation>Signa Tx</translation>
+    </message>
+    <message>
+        <source>Broadcast Tx</source>
+        <translation>Emet Tx</translation>
+    </message>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>Còpia al Clipboard</translation>
+    </message>
+    <message>
+        <source>Save...</source>
+        <translation>Desa...</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Import total</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>o</translation>
+    </message>
+    </context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <source>Payment request error</source>
+        <translation>Error de la sol·licitud de pagament</translation>
+    </message>
+    <message>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>No es pot iniciar bitcoin: controlador click-to-pay</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation>Gestió d'URI</translation>
+    </message>
+    <message>
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation>'bitcoin://' no és una URI vàlida. Usi 'bitcoin:' en lloc seu.</translation>
+    </message>
+    <message>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>No es pot processar la petició de pagament perquè BIP70 no està suportat.</translation>
+    </message>
+    <message>
+        <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
+        <translation>A causa dels defectes generalitzats en el BIP70 és altament recomanable que qualsevol instrucció comerciant per canviar carteres sigui ignorada.</translation>
+    </message>
+    <message>
+        <source>If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
+        <translation>Si estàs rebent aquest error, hauries de demanar al comerciant que et doni una URI compatible amb el BIP21.</translation>
+    </message>
+    <message>
+        <source>Invalid payment address %1</source>
+        <translation>Adreça de pagament no vàlida %1</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Bitcoin no vàlida o per paràmetres URI amb mal format.</translation>
+    </message>
+    <message>
+        <source>Payment request file handling</source>
+        <translation>Gestió de fitxers de les sol·licituds de pagament</translation>
+    </message>
 </context>
 <context>
     <name>PeerTableModel</name>
@@ -880,8 +1590,20 @@
         <translation>Node/Servei</translation>
     </message>
     <message>
-        <source>Ping Time</source>
-        <translation>Temps de ping</translation>
+        <source>NodeId</source>
+        <translation>NodeId</translation>
+    </message>
+    <message>
+        <source>Ping</source>
+        <translation>Ping</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Enviat</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Rebut</translation>
     </message>
 </context>
 <context>
@@ -922,6 +1644,101 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation><numerusform>Un segon</numerusform><numerusform>%n segons</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation><numerusform>Un minut</numerusform><numerusform>%n minuts</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>Una hora</numerusform><numerusform>%n hores</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>Un dia</numerusform><numerusform>%n dies</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>Una setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 i %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>Un any</numerusform><numerusform>%n anys</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Error: El directori de dades especificat «%1» no existeix.</translation>
+    </message>
+    <message>
+        <source>Error: Cannot parse configuration file: %1.</source>
+        <translation>Error: No es pot interpretar el fitxer de configuració: %1.</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation>Avís: %1</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely...</source>
+        <translation>%1 encara no ha finalitzat de manera segura...</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>desconegut</translation>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>De&amp;sa la imatge...</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Copia la imatge</translation>
+    </message>
+    <message>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI resultant massa llarga, intenta reduir el text per a la etiqueta / missatge</translation>
+    </message>
+    <message>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Error en codificar l'URI en un codi QR.</translation>
+    </message>
+    <message>
+        <source>QR code support not available.</source>
+        <translation>Suport de codi QR no disponible.</translation>
+    </message>
+    <message>
+        <source>Save QR Code</source>
+        <translation>Desa el codi QR</translation>
+    </message>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>Imatge PNG (*.png)</translation>
+    </message>
 </context>
 <context>
     <name>RPCConsole</name>
@@ -938,16 +1755,28 @@
         <translation>&amp;Informació</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>Finestra de depuració</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>General</translation>
     </message>
     <message>
         <source>Using BerkeleyDB version</source>
         <translation>Utilitzant BerkeleyDB versió</translation>
+    </message>
+    <message>
+        <source>Datadir</source>
+        <translation>Datadir</translation>
+    </message>
+    <message>
+        <source>To specify a non-default location of the data directory use the '%1' option.</source>
+        <translation>Per tal d'especificar una ubicació que no és per defecte del directori de dades utilitza la '%1' opció.</translation>
+    </message>
+    <message>
+        <source>Blocksdir</source>
+        <translation>Directori de blocs</translation>
+    </message>
+    <message>
+        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
+        <translation>Per tal d'especificar una ubicació que no és per defecte del directori de blocs utilitza la '%1' opció.</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -970,10 +1799,6 @@
         <translation>Cadena de blocs</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Nombre de blocs actuals</translation>
-    </message>
-    <message>
         <source>Memory Pool</source>
         <translation>Reserva de memòria</translation>
     </message>
@@ -983,7 +1808,19 @@
     </message>
     <message>
         <source>Memory usage</source>
-        <translation>Us de memoria</translation>
+        <translation>Ús de memòria</translation>
+    </message>
+    <message>
+        <source>Wallet: </source>
+        <translation>Cartera:</translation>
+    </message>
+    <message>
+        <source>(none)</source>
+        <translation>(cap)</translation>
+    </message>
+    <message>
+        <source>&amp;Reset</source>
+        <translation>&amp;Reinicialitza</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1006,10 +1843,6 @@
         <translation>Seleccioneu un igual per mostrar informació detallada.</translation>
     </message>
     <message>
-        <source>Whitelisted</source>
-        <translation>A la llista blanca</translation>
-    </message>
-    <message>
         <source>Direction</source>
         <translation>Direcció</translation>
     </message>
@@ -1030,16 +1863,36 @@
         <translation>Blocs sincronitzats</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>El sistema autònom de mapat utilitzat per diversificar la selecció entre iguals.</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>Mapat com</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>Agent d'usuari</translation>
     </message>
     <message>
-        <source>Services</source>
-        <translation>Serveis</translation>
+        <source>Node window</source>
+        <translation>Finestra node</translation>
     </message>
     <message>
-        <source>Ban Score</source>
-        <translation>Puntuació de bandeig</translation>
+        <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obre el fitxer de registre de depuració %1 del directori de dades actual. Això pot trigar uns segons en fitxers de registre grans.</translation>
+    </message>
+    <message>
+        <source>Decrease font size</source>
+        <translation>Disminueix la mida de la lletra</translation>
+    </message>
+    <message>
+        <source>Increase font size</source>
+        <translation>Augmenta la mida de la lletra</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Serveis</translation>
     </message>
     <message>
         <source>Connection Time</source>
@@ -1066,6 +1919,10 @@
         <translation>Espera de ping</translation>
     </message>
     <message>
+        <source>Min Ping</source>
+        <translation>Min Ping</translation>
+    </message>
+    <message>
         <source>Time Offset</source>
         <translation>Diferència horària</translation>
     </message>
@@ -1084,10 +1941,6 @@
     <message>
         <source>&amp;Network Traffic</source>
         <translation>Trà&amp;nsit de la xarxa</translation>
-    </message>
-    <message>
-        <source>&amp;Clear</source>
-        <translation>Nete&amp;ja</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -1110,14 +1963,6 @@
         <translation>Neteja la consola</translation>
     </message>
     <message>
-        <source>&amp;Disconnect Node</source>
-        <translation>&amp;Desconnecta el node</translation>
-    </message>
-    <message>
-        <source>Ban Node for</source>
-        <translation>Bandeja el node durant</translation>
-    </message>
-    <message>
         <source>1 &amp;hour</source>
         <translation>1 &amp;hora</translation>
     </message>
@@ -1134,32 +1979,48 @@
         <translation>1 &amp;any</translation>
     </message>
     <message>
-        <source>&amp;Unban Node</source>
-        <translation>&amp;Desbandeja el node</translation>
+        <source>&amp;Disconnect</source>
+        <translation>&amp;Desconnecta</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utilitza les fletxes d'amunt i avall per navegar per l'historial, i &lt;b&gt;Ctrl-L&lt;\b&gt; per netejar la pantalla.</translation>
+        <source>Ban for</source>
+        <translation>Bandeja per</translation>
     </message>
     <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Escriviu &lt;b&gt;help&lt;\b&gt; per a obtenir un llistat de les ordres disponibles.</translation>
+        <source>&amp;Unban</source>
+        <translation>&amp;Desbandeja</translation>
     </message>
     <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
+        <source>Welcome to the %1 RPC console.</source>
+        <translation>Us donem la benvinguda a la consola RPC de %1</translation>
     </message>
     <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Utilitzeu les fletxes amunt i avall per navegar per l'historial i %1 per netejar la pantalla.</translation>
     </message>
     <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
+        <source>Type %1 for an overview of available commands.</source>
+        <translation>Escriu %1 per veure un sumari de les comandes disponibles.</translation>
     </message>
     <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
+        <source>For more information on using this console type %1.</source>
+        <translation>Per més informació per usar aquesta consola de comandes, escriu %1.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ADVERTIMENT: Els estafadors han estat actius, dient als usuaris que escriguin ordres aquí, robant els contingut de les seves carteres. No utilitzeu aquesta consola sense comprendre completament les ramificacions d'una ordre.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled</source>
+        <translation>Activitat de xarxa inhabilitada</translation>
+    </message>
+    <message>
+        <source>Executing command without any wallet</source>
+        <translation>S'està executant l'ordre sense cap cartera</translation>
+    </message>
+    <message>
+        <source>Executing command using "%1" wallet</source>
+        <translation>S'està executant comanda usant la cartera "%1"</translation>
     </message>
     <message>
         <source>(node id: %1)</source>
@@ -1182,14 +2043,6 @@
         <translation>Sortint</translation>
     </message>
     <message>
-        <source>Yes</source>
-        <translation>Sí</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>No</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Desconegut</translation>
     </message>
@@ -1209,14 +2062,6 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
-        <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reutilitza una de les adreces de recepció utilitzades anteriorment. La reutilització d'adreces pot comportar problemes de seguretat i privadesa. No ho utilitzeu llevat que torneu a generar una sol·licitud de pagament feta abans.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;eutilitza una adreça de recepció anterior (no recomanat)</translation>
-    </message>
-    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
         <translation>Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Bitcoin.</translation>
     </message>
@@ -1233,20 +2078,36 @@
         <translation>Un import opcional per sol·licitar. Deixeu-ho en blanc o zero per no sol·licitar cap import específic.</translation>
     </message>
     <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>Una etiqueta opcional per associar-se a la nova adreça de recepció (usada per vostè per identificar una factura). També s’adjunta a la sol·licitud de pagament.</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>Un missatge opcional adjunt a la sol·licitud de pagament i que es pot mostrar al remitent.</translation>
+    </message>
+    <message>
+        <source>&amp;Create new receiving address</source>
+        <translation>&amp;Creeu una nova adreça de recepció</translation>
+    </message>
+    <message>
         <source>Clear all fields of the form.</source>
-        <translation>Esborra tots els camps del formuari.</translation>
+        <translation>Neteja tots els camps del formulari.</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>Neteja</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation>Historial de pagaments sol·licitats</translation>
+        <source>Native segwit addresses (aka Bech32 or BIP-173) reduce your transaction fees later on and offer better protection against typos, but old wallets don't support them. When unchecked, an address compatible with older wallets will be created instead.</source>
+        <translation>Les adreces segwit natives (més conegudes com Bech32 o BIP-173) redueixen les vostres comisions de les transaccions i ofereixen millor protecció contra errades tipogràfiques, però els moneders antics no les suporten. Quan desmarqui la casella, es generarà una adreça compatible amb moneders antics.</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Sol·licitud de pagament</translation>
+        <source>Generate native segwit (Bech32) address</source>
+        <translation>Generar una adreça segwit nativa (Bech32)</translation>
+    </message>
+    <message>
+        <source>Requested payments history</source>
+        <translation>Historial de pagaments sol·licitats</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -1264,12 +2125,40 @@
         <source>Remove</source>
         <translation>Esborra</translation>
     </message>
-</context>
+    <message>
+        <source>Copy URI</source>
+        <translation>Copia l'URI</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copia l'etiqueta</translation>
+    </message>
+    <message>
+        <source>Copy message</source>
+        <translation>Copia el missatge</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>No s'ha pogut desblocar la cartera.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>Codi QR</translation>
+        <source>Amount:</source>
+        <translation>Import:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Missatge:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Moneder:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -1282,6 +2171,45 @@
     <message>
         <source>&amp;Save Image...</source>
         <translation>De&amp;sa la imatge...</translation>
+    </message>
+    <message>
+        <source>Request payment to %1</source>
+        <translation>Sol·licita un pagament a %1</translation>
+    </message>
+    <message>
+        <source>Payment information</source>
+        <translation>Informació de pagament</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Missatge</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
+    </message>
+    <message>
+        <source>(no message)</source>
+        <translation>(sense missatge)</translation>
+    </message>
+    <message>
+        <source>(no amount requested)</source>
+        <translation>(no s'ha sol·licitat import)</translation>
+    </message>
+    <message>
+        <source>Requested</source>
+        <translation>Sol·licitat</translation>
     </message>
 </context>
 <context>
@@ -1319,10 +2247,6 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Prioritat:</translation>
-    </message>
-    <message>
         <source>Fee:</source>
         <translation>Comissió:</translation>
     </message>
@@ -1351,32 +2275,28 @@
         <translation>Tria...</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>redueix els paràmetres de comissió</translation>
+        <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
+        <translation>L'ús de la tarifa de pagament pot provocar l'enviament d'una transacció que trigarà diverses hores o dies (o mai) a confirmar. Penseu a triar la possibilitat d'escollir la tarifa manualment o espereu fins que hagueu validat la cadena completa.</translation>
+    </message>
+    <message>
+        <source>Warning: Fee estimation is currently not possible.</source>
+        <translation>Advertència: l'estimació de tarifes no és possible actualment.</translation>
+    </message>
+    <message>
+        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
+
+Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
+        <translation>Especifiqui una comissió personalitzada per kB (1.000 bytes) de la mida virtual de la transacció.
+
+Nota: Com que la comissió es calcula en funció dels bytes, una comissió de "100 satoshis per cada kB" per una transacció de mida 500 bytes (la meitat de 1 kB) comportaria finalment una comissió de la transacció de només 50 satoshis.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
         <translation>per kilobyte</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comissió personalitzada es defineix a 1000 satoshis i la transacció és de només 250 bytes, llavors «per kilobyte» només es paguen 250 satoshis en una comissió, mentre que amb la de «total com a mínim» es pagarien 1000 satoshis. Per a transaccions superiors al kilobyte, en tots dos casos es paga per kilobyte.</translation>
-    </message>
-    <message>
         <source>Hide</source>
         <translation>Amaga</translation>
-    </message>
-    <message>
-        <source>total at least</source>
-        <translation>total com a mínim</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>No hi ha cap problema en pagar només la comissió mínima sempre que hi hagi menys volum de transacció que espai en els blocs. Però tingueu present que això pot acabar en una transacció que mai es confirmi una vegada hi hagi més demanda de transaccions de bitcoins que la xarxa pugui processar.</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(llegiu l'indicador de funció)</translation>
     </message>
     <message>
         <source>Recommended:</source>
@@ -1391,18 +2311,6 @@
         <translation>(No s'ha inicialitzat encara la comissió intel·ligent. Normalment pren uns pocs blocs...)</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Temps de confirmació:</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>ràpid</translation>
-    </message>
-    <message>
         <source>Send to multiple recipients at once</source>
         <translation>Envia a múltiples destinataris al mateix temps</translation>
     </message>
@@ -1412,11 +2320,35 @@
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Netejar tots els camps del formulari.</translation>
+        <translation>Neteja tots els camps del formulari.</translation>
     </message>
     <message>
         <source>Dust:</source>
         <translation>Polsim:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>Amagueu la configuració de les tarifes de transacció</translation>
+    </message>
+    <message>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation>Quan no hi ha prou espai en els blocs per encabir totes les transaccions, els miners i així mateix els nodes repetidors poden exigir una taxa mínima. És acceptable pagar únicament la taxa mínima, però tingueu present que pot resultar que la vostra transacció no sigui mai confirmada mentre hi hagi més demanda de transaccions bitcoin de les que la xarxa pot processar.</translation>
+    </message>
+    <message>
+        <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
+        <translation>Una taxa massa baixa pot resultar en una transacció que no es confirmi mai (llegiu el consell)</translation>
+    </message>
+    <message>
+        <source>Confirmation time target:</source>
+        <translation>Temps de confirmació objectiu:</translation>
+    </message>
+    <message>
+        <source>Enable Replace-By-Fee</source>
+        <translation>Habilita Replace-By-Fee: substitució per comissió</translation>
+    </message>
+    <message>
+        <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
+        <translation>Amb la substitució per comissió o Replace-By-Fee (BIP-125) pot incrementar la comissió de la transacció després d'enviar-la. Sense això, seria recomenable una comissió més alta per compensar el risc d'increment del retard de la transacció.</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1433,6 +2365,166 @@
     <message>
         <source>S&amp;end</source>
         <translation>E&amp;nvia</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copia la quantitat</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copia la comissió</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Copia la comissió posterior</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copia els bytes</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Copia el polsim</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copia el canvi</translation>
+    </message>
+    <message>
+        <source>%1 (%2 blocks)</source>
+        <translation>%1 (%2 blocs)</translation>
+    </message>
+    <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Creació sense firmar</translation>
+    </message>
+    <message>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Crea una transacció bitcoin parcialment signada (PSBT) per a utilitzar, per exemple,  amb una cartera %1 fora de línia o amb una cartera compatible amb PSBT.</translation>
+    </message>
+    <message>
+        <source> from wallet '%1'</source>
+        <translation>de la cartera "%1"</translation>
+    </message>
+    <message>
+        <source>%1 to '%2'</source>
+        <translation>%1 a '%2'</translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation>%1 a %2</translation>
+    </message>
+    <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>Voleu redactar aquesta transacció?</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>Esteu segur que ho voleu enviar?</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>o</translation>
+    </message>
+    <message>
+        <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
+        <translation>Pot incrementar la comissió més tard (senyala Replace-By-Fee o substitució per comissió, BIP-125).</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction.</source>
+        <translation>Reviseu la transacció</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Comissió de transacció</translation>
+    </message>
+    <message>
+        <source>Not signalling Replace-By-Fee, BIP-125.</source>
+        <translation>Substitució per tarifa sense senyalització, BIP-125</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Import total</translation>
+    </message>
+    <message>
+        <source>To review recipient list click "Show Details..."</source>
+        <translation>Per revisar la llista de destinataris, feu clic a "Mostra els detalls ..."</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Confirma l'enviament de monedes</translation>
+    </message>
+    <message>
+        <source>Confirm transaction proposal</source>
+        <translation>Confirmeu la proposta de transacció</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Enviar</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>Saldo només de vigilància:</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid. Please recheck.</source>
+        <translation>L'adreça del destinatari no és vàlida. Torneu-la a comprovar.</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>L'import a pagar ha de ser major que 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>L'import supera el vostre balanç.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>El total excedeix el vostre balanç quan s'afegeix la comissió a la transacció %1.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found: addresses should only be used once each.</source>
+        <translation>S'ha trobat una adreça duplicada: les adreces només s'haurien d'utilitzar una vegada cada una.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>La creació de la transacció ha fallat!</translation>
+    </message>
+    <message>
+        <source>A fee higher than %1 is considered an absurdly high fee.</source>
+        <translation>Una comissió superior a %1 es considera una comissió absurdament alta.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>La sol·licitud de pagament ha vençut.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>S’estima que comenci la confirmació dintre d'un bloc.</numerusform><numerusform>S’estima que comenci la confirmació dintre de %n blocs.</numerusform></translation>
+    </message>
+    <message>
+        <source>Warning: Invalid Bitcoin address</source>
+        <translation>Avís: adreça Bitcoin no vàlida</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown change address</source>
+        <translation>Avís: adreça de canvi desconeguda</translation>
+    </message>
+    <message>
+        <source>Confirm custom change address</source>
+        <translation>Confirma l'adreça de canvi personalitzada</translation>
+    </message>
+    <message>
+        <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
+        <translation>L'adreça que heu seleccionat per al canvi no és part d'aquesta cartera. Tots els fons de la vostra cartera es poden enviar a aquesta adreça. N'esteu segur?</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
     </message>
 </context>
 <context>
@@ -1454,10 +2546,6 @@
         <translation>Escull una adreça feta servir anteriorment</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Això és un pagament normal.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>L'adreça Bitcoin on enviar el pagament</translation>
     </message>
@@ -1467,7 +2555,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Enganxar adreça del porta-retalls</translation>
+        <translation>Enganxa l'adreça del porta-retalls</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1478,12 +2566,20 @@
         <translation>Elimina aquesta entrada</translation>
     </message>
     <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>L’import a enviar a la unitat seleccionada</translation>
+    </message>
+    <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>La comissió es deduirà de l'import que s'enviarà. El destinatari rebrà menys bitcoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la comissió es dividirà per igual.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
         <translation>S&amp;ubstreu la comissió de l'import</translation>
+    </message>
+    <message>
+        <source>Use available balance</source>
+        <translation>Usa el saldo disponible</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -1517,6 +2613,10 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
+        <source>%1 is shutting down...</source>
+        <translation>%1 s'està tancant ...</translation>
+    </message>
+    <message>
         <source>Do not shut down the computer until this window disappears.</source>
         <translation>No apagueu l'ordinador fins que no desaparegui aquesta finestra.</translation>
     </message>
@@ -1525,7 +2625,7 @@
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Signa / verifica un missatge</translation>
+        <translation>Signatures - Signa o verifica un missatge</translation>
     </message>
     <message>
         <source>&amp;Sign Message</source>
@@ -1541,11 +2641,11 @@
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Tria les adreces fetes servir amb anterioritat</translation>
+        <translation>Escull una adreça feta servir anteriorment</translation>
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <translation>Alta+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1596,6 +2696,14 @@
         <translation>L'adreça Bitcoin amb què va ser signat el missatge</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>El missatge signat per verificar</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>La signatura donada quan es va signar el missatge</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Bitcoin específica</translation>
     </message>
@@ -1607,12 +2715,61 @@
         <source>Reset all verify message fields</source>
         <translation>Neteja tots els camps de verificació de missatge</translation>
     </message>
-</context>
-<context>
-    <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Feu clic a «Signa el missatge» per a generar una signatura</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>L'adreça introduïda no és vàlida.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Comproveu l'adreça i torneu-ho a provar.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>L'adreça introduïda no referencia a cap clau.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>S'ha cancel·lat el desblocatge de la cartera.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Cap error</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>La clau privada per a la adreça introduïda no està disponible.</translation>
+    </message>
+    <message>
+        <source>Message signing failed.</source>
+        <translation>La signatura del missatge ha fallat.</translation>
+    </message>
+    <message>
+        <source>Message signed.</source>
+        <translation>Missatge signat.</translation>
+    </message>
+    <message>
+        <source>The signature could not be decoded.</source>
+        <translation>La signatura no s'ha pogut descodificar.</translation>
+    </message>
+    <message>
+        <source>Please check the signature and try again.</source>
+        <translation>Comproveu la signatura i torneu-ho a provar.</translation>
+    </message>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>La signatura no coincideix amb el resum del missatge.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>Ha fallat la verificació del missatge.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Missatge verificat.</translation>
     </message>
 </context>
 <context>
@@ -1623,10 +2780,451 @@
     </message>
 </context>
 <context>
+    <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Obre per un bloc més</numerusform><numerusform>Obre per %n blocs més</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Obert fins %1</translation>
+    </message>
+    <message>
+        <source>conflicted with a transaction with %1 confirmations</source>
+        <translation>produït un conflicte amb una transacció amb %1 confirmacions</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, %1</source>
+        <translation>0/no confirmades, %1</translation>
+    </message>
+    <message>
+        <source>in memory pool</source>
+        <translation>a la reserva de memòria</translation>
+    </message>
+    <message>
+        <source>not in memory pool</source>
+        <translation>no a la reserva de memòria</translation>
+    </message>
+    <message>
+        <source>abandoned</source>
+        <translation>abandonada</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/sense confirmar</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 confirmacions</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Estat</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Font</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Generada</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>De</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>desconegut</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>A</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>adreça pròpia</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>només lectura</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation>etiqueta</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>Crèdit</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>madura en un bloc més</numerusform><numerusform>madura en %n blocs més</numerusform></translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>no acceptat</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>Dèbit</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Dèbit total</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Crèdit total</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Comissió de transacció</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation>Import net</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Missatge</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Comentari</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>ID de la transacció</translation>
+    </message>
+    <message>
+        <source>Transaction total size</source>
+        <translation>Mida total de la transacció</translation>
+    </message>
+    <message>
+        <source>Transaction virtual size</source>
+        <translation>Mida virtual de la transacció</translation>
+    </message>
+    <message>
+        <source>Output index</source>
+        <translation>Índex de resultats</translation>
+    </message>
+    <message>
+        <source> (Certificate was not verified)</source>
+        <translation>(El certificat no s'ha verificat)</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation>Mercader</translation>
+    </message>
+    <message>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Les monedes generades han de madurar %1 blocs abans de poder ser gastades. Quan genereu aquest bloc, es farà saber a la xarxa per tal d'afegir-lo a la cadena de blocs. Si no pot fer-se lloc a la cadena, el seu estat canviarà a «no acceptat» i no es podrà gastar. Això pot passar ocasionalment si un altre node genera un bloc en un marge de segons respecte al vostre.</translation>
+    </message>
+    <message>
+        <source>Debug information</source>
+        <translation>Informació de depuració</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>Transacció</translation>
+    </message>
+    <message>
+        <source>Inputs</source>
+        <translation>Entrades</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Import</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation>cert</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation>fals</translation>
+    </message>
+</context>
+<context>
     <name>TransactionDescDialog</name>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Aquest panell mostra una descripció detallada de la transacció</translation>
+    </message>
+    <message>
+        <source>Details for %1</source>
+        <translation>Detalls per %1</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipus</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Obre per un bloc més</numerusform><numerusform>Obre per %n blocs més</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Obert fins %1</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Sense confirmar</translation>
+    </message>
+    <message>
+        <source>Abandoned</source>
+        <translation>Abandonada</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>Confirmant (%1 de %2 confirmacions recomanades)</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Confirmat (%1 confirmacions)</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>En conflicte</translation>
+    </message>
+    <message>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Immadur (%1 confirmacions, serà disponible després de %2)</translation>
+    </message>
+    <message>
+        <source>Generated but not accepted</source>
+        <translation>Generat però no acceptat</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Rebuda amb</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>Rebuda de</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Enviada a</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>Pagament a un mateix</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minada</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>només lectura</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>(n/a)</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>Estat de la transacció. Desplaceu-vos sobre aquest camp per mostrar el nombre de confirmacions.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>Data i hora en què la transacció va ser rebuda.</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>Tipus de transacció.</translation>
+    </message>
+    <message>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Si està implicada o no una adreça només de lectura en la transacció.</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Intenció/propòsit de la transacció definida per l'usuari.</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>Import extret o afegit del balanç.</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>All</source>
+        <translation>Tot</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Avui</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>Aquesta setmana</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Aquest mes</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>El mes passat</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>Enguany</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>Rang...</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Rebuda amb</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Enviada a</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A un mateix</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minada</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Altres</translation>
+    </message>
+    <message>
+        <source>Enter address, transaction id, or label to search</source>
+        <translation>Introduïu una adreça, la id de la transacció o l'etiqueta per a cercar</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Import mínim</translation>
+    </message>
+    <message>
+        <source>Abandon transaction</source>
+        <translation>Abandonar transacció</translation>
+    </message>
+    <message>
+        <source>Increase transaction fee</source>
+        <translation>Augmenta la comissió de transacció</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia l'adreça</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copia l'etiqueta</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Copia l'ID de transacció</translation>
+    </message>
+    <message>
+        <source>Copy raw transaction</source>
+        <translation>Copia la transacció crua</translation>
+    </message>
+    <message>
+        <source>Copy full transaction details</source>
+        <translation>Copia els detalls complets de la transacció</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Editar etiqueta</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Mostra detalls de la transacció</translation>
+    </message>
+    <message>
+        <source>Export Transaction History</source>
+        <translation>Exporta l'historial de transacció</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Fitxer separat per comes (*.csv)</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Confirmat</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>Només de lectura</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipus</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adreça</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>L'exportació ha fallat</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>S'ha produït un error en provar de desar l'historial de transacció a %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Successful</source>
+        <translation>Exportació amb èxit</translation>
+    </message>
+    <message>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>L'historial de transaccions s'ha desat correctament a %1.</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Rang:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>a</translation>
     </message>
 </context>
 <context>
@@ -1637,30 +3235,138 @@
     </message>
 </context>
 <context>
+    <name>WalletController</name>
+    <message>
+        <source>Close wallet</source>
+        <translation>Tanca la cartera</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Segur que voleu tancar la cartera &lt;i&gt;%1 &lt;/i&gt;?</translation>
+    </message>
+    <message>
+        <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
+        <translation>Si tanqueu la cartera durant massa temps, es pot haver de tornar a sincronitzar tota la cadena si teniu el sistema de poda habilitat.</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Tanqueu totes les carteres</translation>
+    </message>
+    </context>
+<context>
+    <name>WalletFrame</name>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Crear una nova cartera</translation>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>Envia monedes</translation>
+    </message>
+    <message>
+        <source>Fee bump error</source>
+        <translation>Error de recàrrec de tarifes</translation>
+    </message>
+    <message>
+        <source>Increasing transaction fee failed</source>
+        <translation>S'ha produït un error en augmentar la tarifa de transacció</translation>
+    </message>
+    <message>
+        <source>Do you want to increase the fee?</source>
+        <translation>Voleu augmentar la tarifa?</translation>
+    </message>
+    <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>Voleu redactar una transacció amb augment de tarifes?</translation>
+    </message>
+    <message>
+        <source>Current fee:</source>
+        <translation>tarifa actual:</translation>
+    </message>
+    <message>
+        <source>Increase:</source>
+        <translation>Increment:</translation>
+    </message>
+    <message>
+        <source>New fee:</source>
+        <translation>Nova tarifa:</translation>
+    </message>
+    <message>
+        <source>Confirm fee bump</source>
+        <translation>Confirmeu el recàrrec de tarifes</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation>No es pot redactar la transacció.</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT copiada</translation>
+    </message>
+    <message>
+        <source>Can't sign transaction.</source>
+        <translation>No es pot signar la transacció.</translation>
+    </message>
+    <message>
+        <source>Could not commit transaction</source>
+        <translation>No s'ha pogut confirmar la transacció</translation>
+    </message>
+    <message>
+        <source>default wallet</source>
+        <translation>cartera predeterminada</translation>
+    </message>
+</context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Exporta</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exporta les dades de la pestanya actual a un fitxer</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Còpia de seguretat de la cartera</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Dades de cartera (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation>Ha fallat la còpia de seguretat</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation>S'ha produït un error en provar de desar les dades de la cartera a %1.</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation>La còpia de seguretat s'ha realitzat correctament</translation>
+    </message>
+    <message>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation>S'han desat correctament %1 les dades de la cartera a .</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancel·la</translation>
+    </message>
+</context>
+<context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Opcions:</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Especifica el directori de dades</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Connecta al node per obtenir les adreces de les connexions, i desconnecta</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Especifiqueu la vostra adreça pública</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accepta la línia d'ordres i ordres JSON-RPC </translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
-        <translation>Si no es proporciona &lt;category&gt; o si &lt;category&gt; = 1, treu a la sortida tota la informació de depuració.</translation>
+        <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
+        <translation>Distribuït sota la llicència del programari MIT, consulteu el fitxer d'acompanyament %s o %s</translation>
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -1668,71 +3374,59 @@
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Poda: la darrera sincronització del moneder va més enllà de les dades podades. Cal que activeu -reindex (baixeu tota la cadena de blocs de nou en cas de node podat)</translation>
-    </message>
-    <message>
-        <source>Reduce storage requirements by pruning (deleting) old blocks. This mode is incompatible with -txindex and -rescan. Warning: Reverting this setting requires re-downloading the entire blockchain. (default: 0 = disable pruning blocks, &gt;%u = target size in MiB to use for block files)</source>
-        <translation>Reduïu els requisits d'emmagatzematge podant (suprimint) els blocs antics. Aquest mode és incompatible amb -txindex i -rescan. Avís: la reversió d'aquest paràmetre implica haver de tornar a baixar la cadena de blocs sencera. (per defecte: 0 = inhabilita la poda de blocs, &gt;%u = mida objectiu en MiB per utilitzar en els fitxers de blocs)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Els rescanejos no són possible en el mode de poda. Caldrà que utilitzeu -reindex, que tornarà a baixar la cadena de blocs sencera.</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: s'ha produït un error intern fatal. Vegeu debug.log per a més detalls</translation>
-    </message>
-    <message>
-        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comissió (en %s/kB) per afegir a les transaccions que envieu (per defecte: %s)</translation>
+        <translation>Poda: la darrera sincronització de la cartera va més enllà de les dades podades. Cal que activeu -reindex (baixeu tota la cadena de blocs de nou en cas de node podat)</translation>
     </message>
     <message>
         <source>Pruning blockstore...</source>
         <translation>S'està podant la cadena de blocs...</translation>
     </message>
     <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Executa en segon pla com a programa dimoni i accepta ordres</translation>
-    </message>
-    <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation>No s'ha pogut iniciar el servidor HTTP. Vegeu debug.log per a més detalls.</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepta connexions de fora (per defecte: 1 si no -proxy o -connect)</translation>
+        <source>The %s developers</source>
+        <translation>Els desenvolupadors %s</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
+        <translation>No es pot obtenir un bloqueig al directori de dades %s. %s probablement ja s'estigui executant.</translation>
     </message>
     <message>
-        <source>-fallbackfee is set very high! This is the transaction fee you may pay when fee estimates are not available.</source>
-        <translation>-fallbackfee és molt elevat. Aquesta és la comissió de transacció que podeu pagar quan les estimacions de comissions no estan disponibles.</translation>
+        <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
+        <translation>No es poden proporcionar connexions específiques i no es poden trobar connexions sortint al mateix temps.</translation>
     </message>
     <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Vincula a una adreça específica i sempre escolta-hi. Utilitza la notació [host]:port per IPv6</translation>
+        <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>S'ha produït un error en llegir %s. Totes les claus es llegeixen correctament, però les dades de la transacció o les entrades de la llibreta d'adreces podrien faltar o ser incorrectes.</translation>
     </message>
     <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Elimina totes les transaccions del moneder i només recupera aquelles de la cadena de blocs a través de -rescan a l'inici</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
+        <translation>Comproveu que la data i hora de l'ordinador són correctes. Si el rellotge és incorrecte, %s no funcionarà correctament.</translation>
     </message>
     <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distribuït sota llicència de programari MIT. Vegeu el fitxer acompanyant COPYING o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+        <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
+        <translation>Contribueix si trobes %s útil. Visita %s per obtenir més informació sobre el programari.</translation>
     </message>
     <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Executa una ordre quan una transacció del moneder canviï (%s en cmd es canvia per TxID)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Defineix el nombre de fils de verificació d'scripts (%u a %d, 0 = auto, &lt;0 = deixa tants nuclis lliures, per defecte: %d)</translation>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>La base de dades de blocs conté un bloc que sembla ser del futur. Això pot ser degut a que la data i l'hora del vostre ordinador s'estableix incorrectament. Només reconstruïu la base de dades de blocs si esteu segur que la data i l'hora del vostre ordinador són correctes</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation>Aquesta és una versió de pre-llançament - utilitza-la sota la teva responsabilitat - No usar per a minería o aplicacions de compra-venda</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
+        <translation>Aquesta és la tarifa de transacció que podeu descartar si el canvi és menor que el polsim a aquest nivell</translation>
+    </message>
+    <message>
+        <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
+        <translation>No es poden reproduir els blocs. Haureu de reconstruir la base de dades mitjançant -reindex- chainstate.</translation>
+    </message>
+    <message>
+        <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
+        <translation>No es pot rebobinar la base de dades a un estat de pre-bifurcament. Haureu de tornar a descarregar la cadena de blocks</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -1743,36 +3437,36 @@
         <translation>Avís: sembla que no estem plenament d'acord amb els nostres iguals! Podria caler que actualitzar l'aplicació, o potser que ho facin altres nodes.</translation>
     </message>
     <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Afegeix a la llista blanca els iguals que es connecten de la màscara de xarxa o adreça IP donada. Es pot especificar moltes vegades.</translation>
+        <source>-maxmempool must be at least %d MB</source>
+        <translation>-maxmempool ha de tenir almenys %d MB</translation>
     </message>
     <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; pot ser:</translation>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>No es pot resoldre -%s adreça: '%s'</translation>
     </message>
     <message>
-        <source>Block creation options:</source>
-        <translation>Opcions de la creació de blocs:</translation>
+        <source>Change index out of range</source>
+        <translation>Canvieu l'índex fora de l'abast</translation>
     </message>
     <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Connecta només al(s) node(s) especificats</translation>
+        <source>Config setting for %s only applied on %s network when in [%s] section.</source>
+        <translation>Configuració per a %s únicament aplicada a  %s de la xarxa quan es troba a la secció [%s].</translation>
     </message>
     <message>
-        <source>Connection options:</source>
-        <translation>Opcions de connexió:</translation>
+        <source>Copyright (C) %i-%i</source>
+        <translation>Copyright (C) %i-%i</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>S'ha detectat una base de dades de blocs corrupta</translation>
     </message>
     <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Opcions de depuració/proves:</translation>
+        <source>Could not find asmap file %s</source>
+        <translation>No s'ha pogut trobar el fitxer asmap %s</translation>
     </message>
     <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>No carreguis el moneder i inhabilita les crides RPC del moneder</translation>
+        <source>Could not parse asmap file %s</source>
+        <translation>No s'ha pogut analitzar el fitxer asmap %s</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -1784,7 +3478,23 @@
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Error inicialitzant l'entorn de la base de dades del moneder %s!</translation>
+        <translation>Error inicialitzant l'entorn de la base de dades de la cartera %s!</translation>
+    </message>
+    <message>
+        <source>Error loading %s</source>
+        <translation>Error carregant %s</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Private keys can only be disabled during creation</source>
+        <translation>Error carregant %s: les claus privades només es poden desactivar durant la creació</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Wallet corrupted</source>
+        <translation>S'ha produït un error en carregar %s: la cartera és corrupta</translation>
+    </message>
+    <message>
+        <source>Error loading %s: Wallet requires newer version of %s</source>
+        <translation>S'ha produït un error en carregar %s: la cartera requereix una versió més nova de %s</translation>
     </message>
     <message>
         <source>Error loading block database</source>
@@ -1795,12 +3505,12 @@
         <translation>Error en obrir la base de dades de blocs</translation>
     </message>
     <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Error: Espai al disc baix!</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Ha fallat escoltar a qualsevol port. Feu servir -listen=0 si voleu fer això.</translation>
+    </message>
+    <message>
+        <source>Failed to rescan the wallet during initialization</source>
+        <translation>No s'ha pogut escanejar novament la cartera durant la inicialització</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -1811,16 +3521,52 @@
         <translation>No s'ha trobat el bloc de gènesi o és incorrecte. El directori de dades de la xarxa és incorrecte?</translation>
     </message>
     <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Adreça -onion no vàlida: '%s'</translation>
+        <source>Initialization sanity check failed. %s is shutting down.</source>
+        <translation>S'ha produït un error en la verificació de sanejament d'inicialització. S'està tancant %s.</translation>
+    </message>
+    <message>
+        <source>Invalid P2P permission: '%s'</source>
+        <translation>Permís P2P no vàlid: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>Import invàlid per -%s=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
+        <translation>Import invàlid per -discardfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
+        <translation>Import invàlid per -fallbackfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Specified blocks directory "%s" does not exist.</source>
+        <translation>El directori de blocs especificat "%s" no existeix.</translation>
+    </message>
+    <message>
+        <source>Unknown address type '%s'</source>
+        <translation>Tipus d'adreça desconegut '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown change type '%s'</source>
+        <translation>Tipus de canvi desconegut '%s'</translation>
+    </message>
+    <message>
+        <source>Upgrading txindex database</source>
+        <translation>Actualitzant txindex de la base de dades</translation>
+    </message>
+    <message>
+        <source>Loading P2P addresses...</source>
+        <translation>S'estan carregant les adreces P2P ...</translation>
+    </message>
+    <message>
+        <source>Loading banlist...</source>
+        <translation>Carregant banlist ...</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>No hi ha suficient descriptors de fitxers disponibles.</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Només connecta als nodes de la xarxa &lt;net&gt; (ipv4, ipv6 o onion)</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
@@ -1831,124 +3577,84 @@
         <translation>El mode de poda és incompatible amb -txindex.</translation>
     </message>
     <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Defineix la mida de la memòria cau de la base de dades en megabytes (%d a %d, per defecte: %d)</translation>
+        <source>Replaying blocks...</source>
+        <translation>Reproduïnt blocs ...</translation>
     </message>
     <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Defineix la mida màxim del bloc en bytes (per defecte: %d)</translation>
+        <source>Rewinding blocks...</source>
+        <translation>Rebobinant blocs...</translation>
     </message>
     <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Especifica un fitxer de moneder (dins del directori de dades)</translation>
+        <source>The source code is available from %s.</source>
+        <translation>El codi font està disponible a %s.</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Utilitza UPnP per a mapejar el port d'escolta (per defecte: %u)</translation>
+        <source>Transaction fee and change calculation failed</source>
+        <translation>La tarifa de transacció i el càlcul del canvi no han funcionat</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. %s is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest ordinador. %s probablement ja s'estigui executant.</translation>
+    </message>
+    <message>
+        <source>Unable to generate keys</source>
+        <translation>No s'han pogut generar les claus</translation>
+    </message>
+    <message>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Categoria de registre no admesa %s=%s.</translation>
+    </message>
+    <message>
+        <source>Upgrading UTXO database</source>
+        <translation>Actualització de la base de dades UTXO</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>El comentari de l'agent d'usuari (%s) conté caràcters insegurs.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
         <translation>S'estan verificant els blocs...</translation>
     </message>
     <message>
-        <source>Verifying wallet...</source>
-        <translation>S'està verificant el moneder...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>El moneder %s resideix fora del directori de dades %s</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Opcions de moneder:</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Permet les connexions JSON-RPC d'una font específica. Vàlid per a &lt;ip&gt; són una IP individual (p. ex., 1.2.3.4), una xarxa / màscara de xarxa (p. ex., 1.2.3.4/255.255.255.0) o una xarxa/CIDR (p. ex., 1.2.3.4/24). Es pot especificar aquesta opció moltes vegades</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Vincula l'adreça donada i posa a la llista blanca els iguals que s'hi connectin. Feu servir la notació [host]:port per a IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Vincula a l'adreça donada per a escoltar les connexions JSON-RPC. Feu servir la notació [host]:port per a IPv6. Aquesta opció pot ser especificada moltes vegades (per defecte: vincula a totes les interfícies)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Crea fitxers nous amb els permisos per defecte del sistema, en comptes de l'umask 077 (només efectiu amb la funcionalitat de moneder inhabilitada)</translation>
-    </message>
-    <message>
-        <source>Discover own IP addresses (default: 1 when listening and no -externalip or -proxy)</source>
-        <translation>Descobreix l'adreça IP pròpia (per defecte: 1 quan s'escolta i no -externalip o -proxy)</translation>
+        <source>Wallet needed to be rewritten: restart %s to complete</source>
+        <translation>Cal tornar a escriure la cartera: reinicieu %s per a completar-ho</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Error: ha fallat escoltar les connexions entrants (l'escoltament ha retornat l'error %s)</translation>
     </message>
     <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Executa l'ordre quan es rebi un avís rellevant o veiem una forquilla molt llarga (%s en cmd és reemplaçat per un missatge)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Si no s'especifica una paytxfee (comissió de transacció de pagament), inclogueu suficient comissió per tal que les transaccions comencin a confirmar-se en una mitja de n blocs (per defecte: %u)</translation>
-    </message>
-    <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>Import no vàlid per a -maxtxfee=&lt;amount&gt;: '%s' (cal que sigui com a mínim la comissió de minrelay de %s per evitar que les comissions s'encallin)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Mida màxima de les dades en les transaccions de l'operador en què confiem i en les meves (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Consulta a adreces d'iguals a través de DNS, si es troba baix en adreces (per defecte: 1 a menys que -connect)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Genera a l'atzar credencials per a cada connexió proxy. Això habilita l'aïllament del flux de Tor (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Defineix la mida màxima de transaccions d'alta prioritat / baixa comissió en bytes (per defecte: %d)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>L'import de la transacció és massa petit per enviar-la després que se'n dedueixi la comissió</translation>
     </message>
     <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Aquest producte inclou programari desenvolupat pel projecte OpenSSL per a ús a l'OpenSSL Toolkit &lt;https://www.openssl.org/&gt; i programari criptogràfic escrit per Eric Young i programari UPnP escrit per Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Els iguals en la llista blanca no poden ser bandejats per DoS i es transmetran sempre llurs transaccions, fins i tot si ja són a la mempool. Això és útil, p. ex., per a una passarel·la</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Cal que torneu a construir la base de dades fent servir -reindex per tornar al mode no podat. Això tornarà a baixar la cadena de blocs sencera</translation>
-    </message>
-    <message>
-        <source>(default: %u)</source>
-        <translation>(per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Accepta sol·licituds REST públiques (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Connecta a través del proxy SOCKS5</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
         <translation>Error en llegir la base de dades, tancant.</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>&amp;Informació</translation>
+        <source>Error upgrading chainstate database</source>
+        <translation>S'ha produït un error en actualitzar la base de dades de chainstate</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low for %s</source>
+        <translation>Error: l'espai del disc és insuficient per a %s</translation>
+    </message>
+    <message>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Adreça o nom de l'ordinador -onion no vàlida: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address or hostname: '%s'</source>
+        <translation>Adreça o nom de l'ordinador -proxy no vàlida: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
@@ -1959,40 +3665,42 @@
         <translation>S'ha especificat una màscara de xarxa no vàlida a -whitelist: «%s»</translation>
     </message>
     <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Manté com a màxim &lt;n&gt; transaccions no connectables en memòria (per defecte: %u)</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Cal especificar un port amb -whitebind: «%s»</translation>
     </message>
     <message>
-        <source>Node relay options:</source>
-        <translation>Opcions de transmissió del node:</translation>
+        <source>Prune mode is incompatible with -blockfilterindex.</source>
+        <translation>El mode de poda no és compatible amb -blockfilterindex.</translation>
     </message>
     <message>
-        <source>RPC server options:</source>
-        <translation>Opcions del servidor RPC:</translation>
+        <source>Reducing -maxconnections from %d to %d, because of system limitations.</source>
+        <translation>Reducció de -maxconnections de %d a %d, a causa de les limitacions del sistema.</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Envia informació de traça/depuració a la consola en comptes del fitxer debug.log</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Envia les transaccions com a transaccions de comissió zero sempre que sigui possible (per defecte: %u) </translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Mostra totes les opcions de depuració (ús: --help  --help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Redueix el fitxer debug.log durant l'inici del client (per defecte: 1 quan no -debug)</translation>
+        <source>Section [%s] is not recognized.</source>
+        <translation>No es reconeix la secció [%s]</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
         <translation>Ha fallat la signatura de la transacció</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" does not exist</source>
+        <translation>-Walletdir especificat "%s" no existeix</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is a relative path</source>
+        <translation>-Walletdir especificat "%s" és una ruta relativa</translation>
+    </message>
+    <message>
+        <source>Specified -walletdir "%s" is not a directory</source>
+        <translation>-Walletdir especificat "%s" no és un directori</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist
+</source>
+        <translation>El fitxer de configuració especificat %s no existeix
+</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -2000,19 +3708,11 @@
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>Això és programari experimental.</translation>
+        <translation>Aquest és programari experimental.</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Import de la transacció massa petit</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Els imports de les transaccions han de ser positius</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Transacció massa gran per a la política de comissions</translation>
+        <translation>La transacció és massa petita</translation>
     </message>
     <message>
         <source>Transaction too large</source>
@@ -2023,144 +3723,72 @@
         <translation>No s'ha pogut vincular a %s en aquest ordinador (la vinculació ha retornat l'error %s)</translation>
     </message>
     <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Nom d'usuari per a connexions JSON-RPC</translation>
+        <source>Unable to create the PID file '%s': %s</source>
+        <translation>No es pot crear el fitxer PID '%s': %s</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Avís</translation>
+        <source>Unable to generate initial keys</source>
+        <translation>No s'han pogut generar les claus inicials</translation>
     </message>
     <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Se suprimeixen totes les transaccions del moneder...</translation>
+        <source>Unknown -blockfilterindex value %s.</source>
+        <translation>Valor %s -blockfilterindex desconegut</translation>
     </message>
     <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Contrasenya per a connexions JSON-RPC</translation>
+        <source>Verifying wallet(s)...</source>
+        <translation>S'estan verificant les carteres...</translation>
     </message>
     <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Executa l'ordre quan el millor bloc canviï (%s en cmd es reemplaça per un resum de bloc)</translation>
+        <source>Warning: unknown new rules activated (versionbit %i)</source>
+        <translation>Avís: regles noves desconegudes activades (versionbit %i)</translation>
     </message>
     <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Permet consultes DNS per a -addnode, -seednode i -connect</translation>
+        <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>-maxtxfee especificat molt alt! Comissions tan grans podrien pagar-se en una única transacció.</translation>
     </message>
     <message>
-        <source>Loading addresses...</source>
-        <translation>S'estan carregant les adreces...</translation>
+        <source>This is the transaction fee you may pay when fee estimates are not available.</source>
+        <translation>Aquesta és la tarifa de transacció que podeu pagar quan les estimacions de tarifes no estan disponibles.</translation>
     </message>
     <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = manté les metadades de les tx, p. ex., propietari del compte i informació de sol·licitud del pagament, 2 = prescindeix de les metadades de les tx)</translation>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>La longitud total de la cadena de la versió de xarxa (%i) supera la longitud màxima (%i). Redueix el nombre o la mida de uacomments.</translation>
     </message>
     <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>Com d'exhaustiva és la verificació de blocs del -checkblocks (0-4, per defecte: %u)</translation>
+        <source>%s is set very high!</source>
+        <translation>%s està especificat molt alt!</translation>
     </message>
     <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Manté un índex complet de transaccions, utilitzat per la crida rpc getrawtransaction (per defecte: %u)</translation>
+        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
+        <translation>S'ha produït un error en carregar la cartera %s. S'ha especificat un nom de fitxer duplicat -wallet.</translation>
     </message>
     <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Nombre de segons necessaris perquè els iguals de comportament qüestionable puguin tornar a connectar-se (per defecte: %u)</translation>
+        <source>Starting network threads...</source>
+        <translation>S'estan iniciant els fils de la xarxa...</translation>
     </message>
     <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Informació de sortida de la depuració (per defecte: %u, proporcionar &lt;category&gt; és opcional)</translation>
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation>La cartera evitarà pagar menys de la comissió de tramesa mínima</translation>
     </message>
     <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Utilitza un proxy SOCKS4 apart per a arribar als iguals a través de serveis ocults de Tor (per defecte: %s)</translation>
+        <source>This is the minimum transaction fee you pay on every transaction.</source>
+        <translation>Aquesta és la comissió mínima de transacció que paga en cada transacció.</translation>
     </message>
     <message>
-        <source>(default: %s)</source>
-        <translation>(per defecte: %s)</translation>
+        <source>This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Aquesta és la comissió de transacció que pagareu si envieu una transacció.</translation>
     </message>
     <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Demana sempre les adreces dels iguals a través de consultes DNS (per defecte: %u)</translation>
+        <source>Transaction amounts must not be negative</source>
+        <translation>Els imports de la transacció no han de ser negatius</translation>
     </message>
     <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Quants blocs per comprovar a l'inici (per defecte: %u, 0 = tots)</translation>
+        <source>Transaction has too long of a mempool chain</source>
+        <translation>La transacció té massa temps d'una cadena de mempool</translation>
     </message>
     <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Inclou l'adreça IP a la sortida de depuració (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Adreça -proxy invalida: '%s'</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escolta les connexions JSON-RPC en &lt;port&gt; (per defecte: %u o testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Escolta les connexions en &lt;port&gt; (per defecte: %u o testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Manté com a màxim &lt;n&gt; connexions a iguals (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Make the wallet broadcast transactions</source>
-        <translation>Fes que el moneder faci difusió de les transaccions</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Memòria intermèdia màxima de recepció per connexió, &lt;n&gt;*1000 bytes (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Memòria intermèdia màxima d'enviament per connexió, &lt;n&gt;*1000 bytes (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Posa davant de la sortida de depuració una marca horària (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Retransmet i mina les transaccions de l'operador (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Retransmet multisig no P2SH (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Defineix la mida clau disponible a &lt;n&gt; (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Defineix la mida de bloc mínima en bytes (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Defineix el nombre de fils a crides de servei RPC (per defecte: %d)</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Especifica el fitxer de configuració (per defecte: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Especifica el temps d'espera de la connexió en milisegons (mínim: 1, per defecte: %d)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Especifica el fitxer pid (per defecte: %s)</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Gasta el canvi no confirmat en enviar les transaccions (per defecte: %u)</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Llindar per a desconnectar els iguals de comportament qüestionable (per defecte: %u)</translation>
+        <source>Transaction must have at least one recipient</source>
+        <translation>La transacció ha de tenir com a mínim un destinatari</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
@@ -2171,24 +3799,28 @@
         <translation>Balanç insuficient</translation>
     </message>
     <message>
+        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
+        <translation>L'estimació de la quota ha fallat. Fallbackfee està desactivat. Espereu uns quants blocs o activeu -fallbackfee.</translation>
+    </message>
+    <message>
+        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
+        <translation>Avís: Claus privades detectades en la cartera {%s} amb claus privades deshabilitades</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation>No es pot escriure en el directori de dades "%s". Reviseu-ne els permisos.</translation>
+    </message>
+    <message>
         <source>Loading block index...</source>
         <translation>S'està carregant l'índex de blocs...</translation>
     </message>
     <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Afegeix un node per a connectar-s'hi i intenta mantenir-hi la connexió oberta</translation>
-    </message>
-    <message>
         <source>Loading wallet...</source>
-        <translation>S'està carregant el moneder...</translation>
+        <translation>S'està carregant la cartera...</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet</source>
-        <translation>No es pot reduir la versió del moneder</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>No es pot escriure l'adreça per defecte</translation>
+        <translation>No es pot reduir la versió de la cartera</translation>
     </message>
     <message>
         <source>Rescanning...</source>
@@ -2197,10 +3829,6 @@
     <message>
         <source>Done loading</source>
         <translation>Ha acabat la càrrega</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
     </message>
 </context>
 </TS>

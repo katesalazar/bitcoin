@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>ModalOverlay</class>
- <widget class="ModalOverlay" name="ModalOverlay">
+ <widget class="QWidget" name="ModalOverlay">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -206,7 +206,7 @@
            <item row="0" column="1">
             <widget class="QLabel" name="numberOfBlocksLeft">
              <property name="text">
-              <string>Unknown...</string>
+              <string>Unknown…</string>
              </property>
             </widget>
            </item>
@@ -232,7 +232,7 @@
               </sizepolicy>
              </property>
              <property name="text">
-              <string>Unknown...</string>
+              <string>Unknown…</string>
              </property>
             </widget>
            </item>
@@ -254,17 +254,7 @@
              <item>
               <widget class="QLabel" name="percentageProgress">
                <property name="text">
-                <string>~</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QProgressBar" name="progressBar">
-               <property name="value">
-                <number>24</number>
-               </property>
-               <property name="format">
-                <string/>
+                <string notr="true">~</string>
                </property>
               </widget>
              </item>
@@ -286,7 +276,7 @@
            <item row="4" column="1">
             <widget class="QLabel" name="progressIncreasePerH">
              <property name="text">
-              <string>calculating...</string>
+              <string>calculating…</string>
              </property>
             </widget>
            </item>
@@ -306,7 +296,7 @@
            <item row="5" column="1">
             <widget class="QLabel" name="expectedTimeLeft">
              <property name="text">
-              <string>calculating...</string>
+              <string>calculating…</string>
              </property>
             </widget>
            </item>
@@ -338,6 +328,15 @@
              <property name="text">
               <string>Hide</string>
              </property>
+             <property name="shortcut">
+              <string>Esc</string>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::StrongFocus</enum>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
           </layout>
@@ -350,14 +349,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>ModalOverlay</class>
-   <extends>QWidget</extends>
-   <header>modaloverlay.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
